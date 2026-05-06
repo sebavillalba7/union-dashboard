@@ -66,17 +66,11 @@ st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800;900&display=swap');
 
-/* ── Zoom 90% para todos los usuarios ── */
-html {
+/* ── Zoom 90% solo en el contenido principal, no en sidebar ── */
+.main .block-container {
     zoom: 0.90;
 }
-/* Fix: compensar el zoom en el sidebar para que no se corte */
-section[data-testid="stSidebar"] {
-    zoom: 1.0;
-    transform: scale(0.90);
-    transform-origin: top left;
-    width: 111% !important;
-}
+
 
 /* ── FIX: franja superior roja con nombre ── */
 header[data-testid="stHeader"] {

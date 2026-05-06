@@ -97,6 +97,14 @@ header[data-testid="stHeader"]::after {
 section[data-testid="stSidebar"] {
     background: #081426;
     border-right: 1px solid rgba(255,255,255,0.10);
+    min-width: 200px !important;
+    max-width: 220px !important;
+    width: 220px !important;
+}
+
+section[data-testid="stSidebar"] > div {
+    min-width: 200px !important;
+    width: 220px !important;
 }
 
 section[data-testid="stSidebar"] * {
@@ -108,22 +116,22 @@ section[data-testid="stSidebar"] * {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 18px 0 12px 0;
+    padding: 12px 0 8px 0;
     border-bottom: 1px solid rgba(255,255,255,0.10);
-    margin-bottom: 14px;
+    margin-bottom: 10px;
 }
 .sidebar-escudo img {
-    width: 72px;
-    height: 72px;
+    width: 52px;
+    height: 52px;
     object-fit: contain;
-    filter: drop-shadow(0 0 12px rgba(37,99,235,.35));
+    filter: drop-shadow(0 0 10px rgba(37,99,235,.35));
 }
 .sidebar-club-name {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     letter-spacing: 3px;
     color: #ffffff !important;
-    margin-top: 6px;
+    margin-top: 4px;
 }
 
 .stSelectbox label, .stTextInput label, .stNumberInput label {
